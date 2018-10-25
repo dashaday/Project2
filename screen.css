@@ -12,4 +12,30 @@ html {
   line-height: 1.222em; /* 22px / 18px = 1.222... */
   background-image: url(22px-baseline.png);
   padding: 1.222em 1em;
+  font-family: Georgia,Times,"Times New Roman",serif;
+  background-image:
+    linear-gradient(to right, rgba(12, 224, 255), rgba(159, 34, 255));
+    background-size: contain;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: yellow;
+}
+
+.menu ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.menu ul li {
+  background-color: rgba(62, 62, 62, .5);
+  margin: 5px 5px 5px 5px;
+  padding: 5px 10px 5px 10px;
 }
