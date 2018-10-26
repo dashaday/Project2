@@ -11,7 +11,6 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 html {
   font-size: 1.125em; /* 18px / 16px = 1.125em */
   line-height: 1.222em; /* 22px / 18px = 1.222... */
-  background-image: url(22px-baseline.png);
   padding: 1.222em 1em;
   font-family: Georgia,Times,"Times New Roman",serif;
   background-image:
@@ -32,7 +31,22 @@ img {
   max-width: 30%;
 }
 
+h1 {
+  color: white;
+  font-size: 3.75em; /* 60px / 16px */
+}
+
 /* Layout */
+h1 {
+  line-height: 1.222em;
+  margin-bottom: 0.367em; /* 22px / 60px */
+  text-align: center;
+}
+
+#header {
+  margin-bottom: 1.222em;
+}
+
 .menu ul {
   display: flex;
   flex-direction: row;
