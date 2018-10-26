@@ -7,6 +7,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* stylelint-enable */
 
 /* Begin site styles below */
+/* Base styles */
 html {
   font-size: 1.125em; /* 18px / 16px = 1.125em */
   line-height: 1.222em; /* 22px / 18px = 1.222... */
@@ -27,6 +28,11 @@ a:hover {
   color: yellow;
 }
 
+img {
+  max-width: 30%;
+}
+
+/* Layout */
 .menu ul {
   display: flex;
   flex-direction: row;
@@ -35,7 +41,15 @@ a:hover {
 }
 
 .menu ul li {
-  background-color: rgba(62, 62, 62, .5);
   margin: 5px 5px 5px 5px;
   padding: 5px 10px 5px 10px;
 }
+
+/* Module/ Modular */
+.menu ul li {
+  text-align: center;
+  background-color: rgba(62, 62, 62, .5);
+}
+
+
+/* State */
