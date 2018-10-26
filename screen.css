@@ -9,13 +9,14 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* Begin site styles below */
 /* Base styles */
 html {
-  font-size: 1.125em; /* 18px / 16px = 1.125em */
-  line-height: 1.222em; /* 22px / 18px = 1.222... */
-  padding: 1.222em 1em;
-  font-family: Georgia,Times,"Times New Roman",serif;
   background-image:
     linear-gradient(to right, rgba(12, 224, 255), rgba(159, 34, 255));
     background-size: contain;
+  color: white;
+  font-family: Georgia,Times,"Times New Roman",serif;
+  font-size: 1.125em; /* 18px / 16px = 1.125em */
+  line-height: 1.222em; /* 22px / 18px = 1.222... */
+  padding: 1.222em 1em;
 }
 
 a {
@@ -23,28 +24,43 @@ a {
   color: white;
 }
 
-a:hover {
-  color: yellow;
+.description {
+  padding-left: 10px;
+}
+
+.description li {
+  padding: 5px 5px 5px 0;
+}
+
+h1 {
+  line-height: 1.222em;
+  margin-bottom: 0.367em; /* 22px / 60px */
+  text-align: center;
+  font-size: 3.797em; /* 60px / 16px */
+  line-height: 1.222em;
+}
+
+h2 {
+  font-size: 2.531em; /* 60px / 16px */
+  line-height: 1.222em;
+}
+
+h3 {
+  font-size: 1.688em; /* 48px / 16px */
+  line-height: 1.222em;
 }
 
 img {
   max-width: 30%;
 }
 
-h1 {
-  color: white;
-  font-size: 3.75em; /* 60px / 16px */
-}
-
 /* Layout */
-h1 {
-  line-height: 1.222em;
-  margin-bottom: 0.367em; /* 22px / 60px */
-  text-align: center;
+article {
+  padding: 10px 0 10px 20px;
 }
 
 #header {
-  margin-bottom: 1.222em;
+  margin-bottom: 2em;
 }
 
 .menu ul {
@@ -62,12 +78,19 @@ h1 {
 /* Module/ Modular */
 .menu ul li {
   text-align: center;
-  background-color: rgba(62, 62, 62, .5);
+  background-color: rgba(62, 62, 62, 0.5);
 }
 
 
 /* State */
+a:hover {
+  color: yellow;
+}
+
 @media (max-width: 400px) {
+  html {
+    font-size: 1em;
+  }
   .menu ul {
     flex-direction: column;
   }
