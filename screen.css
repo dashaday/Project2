@@ -53,3 +53,8 @@ img {
 
 
 /* State */
+@media (max-width: 400px) {
+  .menu ul {
+    flex-direction: column;
+  }
+}
