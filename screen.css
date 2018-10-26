@@ -55,12 +55,14 @@ img {
 }
 
 /* Layout */
-article {
-  padding: 10px 0 10px 20px;
-}
-
 #header {
   margin-bottom: 2em;
+}
+
+
+/* Module/ Modular */
+article {
+  padding: 10px 0 10px 20px;
 }
 
 .menu ul {
@@ -73,14 +75,27 @@ article {
 .menu ul li {
   margin: 5px 5px 5px 5px;
   padding: 5px 10px 5px 10px;
-}
-
-/* Module/ Modular */
-.menu ul li {
   text-align: center;
-  background-color: rgba(62, 62, 62, 0.5);
+  background-color: rgba(62, 62, 62, 0.6);
 }
 
+#resume-content {
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  flex: 0 1 auto;
+  width: 80vw;
+  align-self: center;
+  padding: 0 10px 10px 10px;
+  margin: 10px 0 10px 0;
+  background-color: rgba(62, 62, 62, 0.3);
+}
+
+#skills > ul {
+  padding-left: 10px;
+}
 
 /* State */
 a:hover {
