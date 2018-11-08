@@ -51,7 +51,7 @@ h3 {
 }
 
 img {
-  max-width: 30%;
+  max-width: 30vw;
 }
 
 /* Layout */
@@ -63,6 +63,17 @@ img {
 /* Module/ Modular */
 article {
   padding: 10px 0 10px 20px;
+}
+
+#by-hand, #digital{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#by-hand figure {
+  margin-top: 30px;
 }
 
 .menu ul {
