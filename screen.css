@@ -59,6 +59,10 @@ img {
   margin-bottom: 2em;
 }
 
+#resume-content {
+  margin: auto;
+  width: 80vw;
+}
 
 /* Module/ Modular */
 article {
@@ -67,8 +71,7 @@ article {
 
 #by-hand, #digital{
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex: row wrap;
   justify-content: center;
 }
 
@@ -93,10 +96,9 @@ article {
 }
 
 section {
-  width: 80vw;
-  padding: 0 10px 10px 10px;
+  background-color: rgba(62, 62, 62, 0.33);
   margin: 10px 0 10px 0;
-  background-color: rgba(62, 62, 62, 0.3);
+  padding: 0 10px 10px 10px;
 }
 
 #skills > ul {
@@ -114,5 +116,11 @@ a:hover {
   }
   .menu ul {
     flex-direction: row;
+  }
+}
+
+@media (min-width: 700px) {
+  #resume-content {
+    width: 60vw;
   }
 }
