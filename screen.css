@@ -78,7 +78,7 @@ article {
 
 .menu ul {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -113,11 +113,11 @@ a:hover {
   color: yellow;
 }
 
-@media (max-width: 400px) {
+@media (min-width: 400px) {
   html {
     font-size: 1em;
   }
   .menu ul {
-    flex-direction: column;
+    flex-direction: row;
   }
 }
