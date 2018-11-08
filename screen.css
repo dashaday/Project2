@@ -59,7 +59,7 @@ img {
   margin-bottom: 2em;
 }
 
-#resume-content {
+#resume-content, #courses-content {
   margin: auto;
   width: 80vw;
 }
@@ -120,7 +120,7 @@ a:hover {
 }
 
 @media (min-width: 700px) {
-  #resume-content {
+  #resume-content, #courses-content {
     width: 60vw;
   }
 }
