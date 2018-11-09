@@ -4,6 +4,13 @@
 */
 /* stylelint-disable*/
 a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}html{line-height:1}body{line-height:inherit}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+
+/* 18.000 / 16 = 1.125 *//* 22  / 18.000 = 1.222222222 *//* html */
+/* 91.125 / 18 = 5.063 *//* 110 / 91.125 = 1.204291658 *//*  h1  */
+/* 60.750 / 18 = 3.375 *//* 88  / 60.750 = 1.448559671 *//*  h2  */
+/* 40.500 / 18 = 2.250 *//* 44  / 40.500 = 1.086419753 *//*  h3  */
+/* 12.000 / 18 = 2.250 *//* 44  / 40.500 = 1.086419753 *//*  h3  */
+
 /* stylelint-enable */
 
 /* Begin site styles below */
@@ -33,20 +40,19 @@ a {
 }
 
 h1 {
-  line-height: 1.222em;
-  margin-bottom: 0.367em; /* 22px / 60px */
+  margin-bottom: 0.367em;
   text-align: center;
-  font-size: 3.797em; /* 60px / 16px */
-  line-height: 1.222em;
+  font-size: 3.375em; /* 60.75px / 18px */
+  line-height: 1.218em;
 }
 
 h2 {
-  font-size: 2.531em; /* 60px / 16px */
-  line-height: 1.222em;
+  font-size: 2.25em; /* 40.5px / 18px */
+  line-height: 1.209em;
 }
 
 h3 {
-  font-size: 1.688em; /* 48px / 16px */
+  font-size: 1.5em; /* 27px / 18px */
   line-height: 1.222em;
 }
 
@@ -105,8 +111,9 @@ article {
   /* width: 25vw; */
 }
 
-figcaption {
-  font-size: 50%;
+figcaption, footer {
+  font-size: 0.6666667em;
+  line-height: 1.25em;
 }
 
 /* navbar container */
