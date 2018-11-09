@@ -14,7 +14,7 @@ html {
     background-size: contain;
   color: white;
   font-family: Georgia,Times,"Times New Roman",serif;
-  font-size: 1.125em; /* 18px / 16px = 1.125em */
+  font-size: 1em; /* 18px / 16px = 1.125em */
   line-height: 1.222em; /* 22px / 18px = 1.222... */
   padding: 1.222em 1em;
 }
@@ -51,7 +51,9 @@ h3 {
 }
 
 img {
-  max-width: 30vw;
+  display: block;
+  flex-shrink: 0;
+  max-width: 100%;
 }
 
 /* Layout */
@@ -59,7 +61,7 @@ img {
   margin-bottom: 2em;
 }
 
-#resume-content, #courses-content {
+main {
   margin: auto;
   width: 80vw;
 }
@@ -69,14 +71,43 @@ article {
   padding: 10px 0 10px 20px;
 }
 
-#by-hand, #digital{
-  display: flex;
-  flex: row wrap;
-  justify-content: center;
+#portfolio-content {
+  width: 90vw;
 }
 
-#by-hand figure {
-  margin-top: 30px;
+/* container of image frames*/
+/* flexes items inside */
+#by-hand, #digital {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 90vw;
+  /* background-color: black; */
+}
+
+/* container of img and figcaption - colored box */
+#by-hand li, #digital li {
+  background-color: rgba(62, 62, 62, 0.6);
+  flex: 1 0 auto;
+  margin: 1vw;
+  width: 30%;
+  min-width: 10px;
+}
+
+#by-hand li figure, #digital li figure {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 100%;
+  justify-content: center;
+  padding: 1vw 2vw 1vw 2vw;
+  /* width: 25vw; */
+}
+
+figcaption {
+  font-size: 50%;
 }
 
 /* navbar container */
@@ -89,10 +120,10 @@ article {
 
 /* navbar items */
 .menu ul li {
+  background-color: rgba(62, 62, 62, 0.6);
   margin: 5px 5px 5px 5px;
   padding: 5px 10px 5px 10px;
   text-align: center;
-  background-color: rgba(62, 62, 62, 0.6);
 }
 
 section {
@@ -111,15 +142,15 @@ a:hover {
 }
 
 @media (min-width: 400px) {
-  html {
-    font-size: 1em;
-  }
   .menu ul {
     flex-direction: row;
   }
 }
 
 @media (min-width: 700px) {
+  html {
+    font-size: 1.125em;
+  }
   #resume-content, #courses-content {
     width: 60vw;
   }
