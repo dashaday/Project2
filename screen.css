@@ -73,7 +73,7 @@ main {
 
 /* Module/ Modular */
 article {
-  padding: 10px 0 10px 20px;
+  padding: 2vh 0 1vh 2vw;
 }
 
 #portfolio-content {
@@ -109,6 +109,11 @@ article {
   justify-content: center;
   padding: 1vw 2vw 1vw 2vw;
   /* width: 25vw; */
+}
+
+figcaption {
+  margin: 2vh 0 2vh 0;
+  text-align: center;
 }
 
 figcaption, footer {
