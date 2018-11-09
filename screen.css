@@ -32,23 +32,24 @@ a {
 }
 
 .description {
-  padding-left: 10px;
+  padding-left: 3vw;
 }
 
 .description li {
-  padding: 5px 5px 5px 0;
+  padding: 1vh 0 1vh 0;
 }
 
 h1 {
-  margin-bottom: 0.367em;
-  text-align: center;
   font-size: 3.375em; /* 60.75px / 18px */
   line-height: 1.218em;
+  margin-bottom: 0.367em;
+  text-align: center;
 }
 
 h2 {
   font-size: 2.25em; /* 40.5px / 18px */
   line-height: 1.209em;
+  margin-bottom: 0.302em;
 }
 
 h3 {
@@ -73,7 +74,7 @@ main {
 
 /* Module/ Modular */
 article {
-  padding: 2vh 0 1vh 2vw;
+  padding: 0 0 1vh 2vw;
 }
 
 #portfolio-content {
@@ -132,15 +133,15 @@ figcaption, footer {
 /* navbar items */
 .menu ul li {
   background-color: rgba(62, 62, 62, 0.6);
-  margin: 5px 5px 5px 5px;
-  padding: 5px 10px 5px 10px;
+  margin: 1vh 1vw;
+  padding: 1vh 2vw 1vh 2vw;
   text-align: center;
 }
 
 section {
   background-color: rgba(62, 62, 62, 0.33);
-  margin: 10px 0 10px 0;
-  padding: 0 10px 10px 10px;
+  margin: 4vh 0 4vh 0;
+  padding: 3vh 3vw 3vh 3vw;
 }
 
 #skills > ul {
