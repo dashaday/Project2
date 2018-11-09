@@ -28,6 +28,18 @@ footer {
   line-height: 1.25em;
 }
 
+@font-face {
+ font-family: 'Leon';
+ src: 'assets/fonts/Leon.ttf' format('truetype');
+ font-style: normal;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Caladea, Times, "Times New Roman", serif;
+}
+
 h1 {
   font-size: 3.375em; /* 60.75px / 18px */
   line-height: 1.218em;
@@ -50,7 +62,7 @@ html {
   background-image: linear-gradient(to right, rgba(12, 224, 255), rgba(159, 34, 255));
   background-size: contain;
   color: white;
-  font-family: Georgia, Times, "Times New Roman", serif;
+  font-family: Leon, Calibri, Arial, serif;
   font-size: 1em; /* 18px / 16px = 1.125em */
   line-height: 1.222em; /* 22px / 18px = 1.222... */
   padding: 1.222em 1em;
@@ -110,7 +122,6 @@ section {
   margin: 4vh 0 4vh 0;
   padding: 3vh 3vw 3vh 3vw;
 }
-
 
 /* Module/ Modular */
 
