@@ -2,9 +2,8 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-/* stylelint-disable*/
+/* stylelint-disable */
 a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}html{line-height:1}body{line-height:inherit}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
-
 /* stylelint-enable */
 
 /* Begin site styles below */
@@ -48,11 +47,10 @@ h3 {
 }
 
 html {
-  background-image:
-    linear-gradient(to right, rgba(12, 224, 255), rgba(159, 34, 255));
-    background-size: contain;
+  background-image: linear-gradient(to right, rgba(12, 224, 255), rgba(159, 34, 255));
+  background-size: contain;
   color: white;
-  font-family: Georgia,Times,"Times New Roman",serif;
+  font-family: Georgia, Times, "Times New Roman", serif;
   font-size: 1em; /* 18px / 16px = 1.125em */
   line-height: 1.222em; /* 22px / 18px = 1.222... */
   padding: 1.222em 1em;
@@ -120,6 +118,14 @@ section {
   padding: 1vh 0 1vh 0;
 }
 
+/* navbar items - lower specificity*/
+.menu ul li {
+  background-color: rgba(62, 62, 62, 0.6);
+  margin: 1vh 1vw;
+  padding: 1vh 2vw 1vh 2vw;
+  text-align: center;
+}
+
 /* container of img and figcaption - colored box */
 #by-hand li,
 #digital li {
@@ -141,16 +147,8 @@ section {
   /* width: 25vw; */
 }
 
-/* navbar items */
-.menu ul li {
-  background-color: rgba(62, 62, 62, 0.6);
-  margin: 1vh 1vw;
-  padding: 1vh 2vw 1vh 2vw;
-  text-align: center;
-}
-
 #skills > ul {
-  padding-left: 10px;
+  padding-left: 2vw;
 }
 
 /* State */
