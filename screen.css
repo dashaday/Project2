@@ -30,14 +30,14 @@ footer {
 
 @font-face {
  font-family: 'Leon';
- src: 'assets/fonts/Leon.ttf' format('truetype');
+ src: url('assets/fonts/Leon.ttf') format('truetype');
  font-style: normal;
 }
 
 h1,
 h2,
 h3 {
-  font-family: Caladea, Times, "Times New Roman", serif;
+  font-family: Leon, Times, "Times New Roman", serif;
 }
 
 h1 {
