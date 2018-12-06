@@ -120,6 +120,7 @@ main {
 
 section {
   background-color: rgba(62, 62, 62, 0.33);
+  border-radius: 3vw;
   margin: 4vh 0 4vh 0;
   padding: 3vh 3vw 3vh 3vw;
 }
@@ -133,6 +134,7 @@ section {
 /* navbar items - lower specificity*/
 .menu ul li {
   background-color: rgba(62, 62, 62, 0.6);
+  border-radius: 3vw;
   margin: 1vh 1vw;
   padding: 1vh 2vw 1vh 2vw;
   text-align: center;
@@ -142,6 +144,7 @@ section {
 #by-hand li,
 #digital li {
   background-color: rgba(62, 62, 62, 0.6);
+  border-radius: 2vw;
   flex: 1 0 auto;
   margin: 1vh 1vw;
   width: 50%;
