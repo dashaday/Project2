@@ -59,8 +59,9 @@ h3 {
 }
 
 html {
-  background-image: linear-gradient(to right, rgba(12, 224, 255), rgba(159, 34, 255));
-  background-size: contain;
+  background-image: url("assets/images/bg-1.png"), url("assets/images/bg-2.png");
+  background-size: 100vw;
+  background-repeat: no-repeat, repeat;
   color: white;
   font-family: Leon, Calibri, Arial, serif;
   font-size: 1em; /* 18px / 16px = 1.125em */
