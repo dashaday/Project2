@@ -59,8 +59,9 @@ h3 {
 }
 
 html {
-  background-image: url("assets/images/bg-1.png"), url("assets/images/bg-2.png");
-  background-size: 100vw;
+  background-image: url("assets/bg-images/bg-1.png"), url("assets/bg-images/bg-2.png");
+  background-size: 120vh, 100vw;
+  background-position: top;
   background-repeat: no-repeat, repeat;
   color: white;
   font-family: Leon, Calibri, Arial, serif;
