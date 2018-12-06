@@ -10,11 +10,11 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* Base styles */
 a {
   text-decoration: none;
-  color: white;
+  color: #464646;
 }
 
 a:hover {
-  color: yellow;
+  color: #b31cff
 }
 
 figcaption {
@@ -34,45 +34,56 @@ footer {
  font-style: normal;
 }
 
-h1,
-h2,
-h3 {
-  font-family: Leon, Times, "Times New Roman", serif;
+@font-face {
+ font-family: 'Volaroid';
+ src: url('assets/fonts/Volaroid.otf') format('opentype');
+ font-style: normal;
 }
 
-h1 {
-  font-size: 3.375em; /* 60.75px / 18px */
-  line-height: 1.218em;
-  margin-bottom: 0.367em;
-  text-align: center;
-}
-
-h2 {
-  font-size: 2.25em; /* 40.5px / 18px */
-  line-height: 1.209em;
-  margin-bottom: 0.302em;
-}
-
-h3 {
-  font-size: 1.5em; /* 27px / 18px */
-  line-height: 1.222em;
+@font-face {
+ font-family: 'Untitled';
+ src: url('assets/fonts/unititled.otf') format('opentype');
+ font-style: normal;
 }
 
 html {
-  background-image: url("assets/bg-images/bg-1.png"), url("assets/bg-images/bg-2.png");
+  /* background-image: url("assets/bg-images/baseline.png"); */
+  background-image: url("assets/bg-images/bg-1a.png"), url("assets/bg-images/bg-2.png");
   background-size: 120vh, 100vw;
   background-position: top;
   background-repeat: no-repeat, repeat;
   color: white;
   font-family: Leon, Calibri, Arial, serif;
-  font-size: 1em; /* 18px / 16px = 1.125em */
+  font-size: 1.125em; /* 18px / 16px = 1.125em */
   line-height: 1.222em; /* 22px / 18px = 1.222... */
   padding: 1.222em 1em;
+}
+
+h1 {
+  font-family: Volaroid, Times, "Times New Roman", serif;
+  font-size: 2.25em; /* 40.5px / 18px  = 2.25 */
+  line-height: 2.177777em; /* line-height is based on 18px size when typeface is involved */
+  margin: 0.5625em 0 0.5625em 0;
+  text-align: center;
+  text-shadow: 3px 3px 7px #464646;
+}
+
+h2 {
+  font-size: 1.5em; /* 27px / 18px  = 1.55 */
+  line-height: 2.5em; /* 32 / 18px  = 1.1852 */
+  font-family: Volaroid, Times, "Times New Roman", serif;
+}
+
+h3 {
+  font-size: 1em; /* 18px / 18px */
+  line-height: 2.5em;
+  font-family: Volaroid, Times, "Times New Roman", serif;
 }
 
 /* Layout */
 
 article {
+  margin-top: 1.22222em;
   padding: 0 0 1vh 2vw;
 }
 
@@ -88,9 +99,12 @@ article {
   width: 90vw;
   /* background-color: black; */
 }
+.date {
+  font-family: Untitled, Calibri, Arial, sans-serif;
+}
 
 .description {
-  padding-left: 3vw;
+  padding: 0.61111em 0 0 3vw;
 }
 
 #header {
@@ -99,6 +113,11 @@ article {
 
 #portfolio-content {
   width: 90vw;
+}
+
+#portfolio-content h2 {
+  color: #464646;
+  text-align: center;
 }
 
 img {
@@ -120,21 +139,27 @@ main {
 }
 
 section {
-  background-color: rgba(62, 62, 62, 0.6);
+  background-color: rgba(62, 62, 62, 0.8);
   border-radius: 3vw;
-  margin: 4vh 0 4vh 0;
+  margin: 2.44444em 0 2.44444em 0;
   padding: 3vh 3vw 3vh 3vw;
+}
+
+.subtitle {
+  font-family: Untitled, Calibri, Arial, sans-serif;
+  font-size: 1.5em; /* 27px / 18px  = 1.55 */
+  line-height: 1.14815em;
 }
 
 /* Module/ Modular */
 
 .description li {
-  padding: 1vh 0 1vh 0;
+  list-style: circle;
 }
 
 /* navbar items - lower specificity*/
 .menu ul li {
-  background-color: rgba(62, 62, 62, 0.6);
+  background-color: rgba(255, 217, 5, 1);
   border-radius: 3vw;
   margin: 1vh 1vw;
   padding: 1vh 2vw 1vh 2vw;
@@ -182,7 +207,6 @@ section {
 @media (min-width: 700px) {
   html {
     background-size: 100vw;
-    font-size: 1.125em;
   }
   #resume-content,
   #courses-content {
