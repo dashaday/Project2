@@ -131,12 +131,24 @@ main {
 }
 
 /* navbar container */
+#menu-button {
+  background-color: white;
+  border: 3px solid rgba(255, 217, 5, 1);
+  border-radius: 3vw;
+  color: #464646;
+  display: block;
+  font-family: Leon, Calibri, Arial, serif;
+  font-size: 0.6666667em; /* 18px / 16px = 1.125em */
+  line-height: 1.222em; /* 22px / 18px = 1.222... */
+  padding: 1vh 2vw 1vh 2vw;
+  text-align: center;
+}
+
 .menu ul {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 2.444444em 0 2.444444em 0;
 }
 
 section {
@@ -194,11 +206,34 @@ section {
 }
 
 /* State */
+.js .nav-list {
+  height: 0;
+  overflow-y: hidden;
+  transition: all 0.2s ease-out;
+}
+
+.js .nav-list.visible {
+  display: flex;
+  flex-direction: column;
+  height: 13em;
+  transition: all 0.2s ease-in;
+}
 
 @media (min-width: 400px) {
+  .js #menu-button {
+    display: none;
+  }
+
+  .js .nav-list {
+    height: auto;
+    overflow-y: auto;
+    display: flex;
+  }
+
   .menu ul {
     flex-direction: row;
   }
+
   #by-hand li,
   #digital li {
     width: 40%;
