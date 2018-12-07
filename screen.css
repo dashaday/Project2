@@ -14,7 +14,7 @@ a {
 }
 
 a:hover {
-  color: #b31cff
+  color: #b31cff;
 }
 
 figcaption {
@@ -29,21 +29,21 @@ footer {
 }
 
 @font-face {
- font-family: 'Leon';
- src: url('assets/fonts/Leon.ttf') format('truetype');
- font-style: normal;
+  font-family: Leon;
+  src: url("assets/fonts/Leon.ttf") format("truetype");
+  font-style: normal;
 }
 
 @font-face {
- font-family: 'Volaroid';
- src: url('assets/fonts/Volaroid.otf') format('opentype');
- font-style: normal;
+  font-family: Volaroid;
+  src: url("assets/fonts/Volaroid.otf") format("opentype");
+  font-style: normal;
 }
 
 @font-face {
- font-family: 'Untitled';
- src: url('assets/fonts/unititled.otf') format('opentype');
- font-style: normal;
+  font-family: Untitled;
+  src: url("assets/fonts/unititled.otf") format("opentype");
+  font-style: normal;
 }
 
 html {
@@ -60,12 +60,12 @@ html {
 }
 
 h1 {
+  color: #2c084b;
   font-family: Volaroid, Times, "Times New Roman", serif;
   font-size: 2.25em; /* 40.5px / 18px  = 2.25 */
   line-height: 2.177777em; /* line-height is based on 18px size when typeface is involved */
   margin: 0.61111em 0 0.61111em 0;
   text-align: center;
-  text-shadow: 3px 3px 7px #464646;
 }
 
 h2 {
