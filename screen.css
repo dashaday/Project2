@@ -18,14 +18,14 @@ a:hover {
 }
 
 figcaption {
-  margin: 2vh 0 2vh 0;
+  margin: 0.61111em 0 0.61111em 0;
   text-align: center;
 }
 
 figcaption,
 footer {
-  font-size: 0.6666667em;
-  line-height: 1.25em;
+  font-size: 0.88888889em;
+  line-height: 1.125em;
 }
 
 @font-face {
@@ -63,7 +63,7 @@ h1 {
   font-family: Volaroid, Times, "Times New Roman", serif;
   font-size: 2.25em; /* 40.5px / 18px  = 2.25 */
   line-height: 2.177777em; /* line-height is based on 18px size when typeface is involved */
-  margin: 0.5625em 0 0.5625em 0;
+  margin: 0.61111em 0 0.61111em 0;
   text-align: center;
   text-shadow: 3px 3px 7px #464646;
 }
@@ -136,6 +136,7 @@ main {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
+  margin: 2.444444em 0 2.444444em 0;
 }
 
 section {
