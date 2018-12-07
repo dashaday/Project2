@@ -22,8 +22,13 @@ figcaption {
   text-align: center;
 }
 
-figcaption,
+figcaption{
+  font-size: 0.88888889em;
+  line-height: 1.125em;
+}
+
 footer {
+  color: white;
   font-size: 0.88888889em;
   line-height: 1.125em;
 }
@@ -182,7 +187,7 @@ section {
 /* container of img and figcaption - colored box */
 #by-hand li,
 #digital li {
-  background-color: rgba(62, 62, 62, 0.6);
+  background-color: rgba(62, 62, 62, 0.8);
   border-radius: 2vw;
   flex: 1 0 auto;
   margin: 1vh 1vw;
