@@ -46,8 +46,8 @@ footer {
 }
 
 @font-face {
-  font-family: Volaroid;
-  src: url("assets/fonts/Volaroid.otf") format("opentype");
+  font-family: Domani;
+  src: url("assets/fonts/DomaniCP.otf") format("opentype");
   font-style: normal;
 }
 
@@ -76,23 +76,27 @@ html {
 
 h1 {
   color: #2c084b;
-  font-family: Volaroid, Times, "Times New Roman", serif;
-  font-size: 2.25em; /* 40.5px / 18px  = 2.25 */
-  line-height: 2.177777em; /* line-height is based on 18px size when typeface is involved */
-  margin: 0.61111em 0 0.61111em 0;
-  text-align: center;
+  font-family: Domani, Times, "Times New Roman", serif;
+  font-size: 4em; /* 40.5px / 18px  = 2.25 */
+  line-height: 1.125em; /* line-height is based on 18px size when typeface is involved */
+  /* margin: 0.61111em 0 0.61111em 0; */
+  /* text-align: center; */
 }
 
 h2 {
   font-size: 1.5em; /* 27px / 18px  = 1.55 */
   line-height: 2.5em; /* 32 / 18px  = 1.1852 */
-  font-family: Volaroid, Times, "Times New Roman", serif;
+  font-family: Domani, Times, "Times New Roman", serif;
 }
 
 h3 {
   font-size: 1em; /* 18px / 18px */
   line-height: 2.5em;
-  font-family: Volaroid, Times, "Times New Roman", serif;
+  font-family: Domani, Times, "Times New Roman", serif;
+}
+
+#title {
+  text-align: center;
 }
 
 /* Layout */
