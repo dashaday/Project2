@@ -63,8 +63,8 @@ footer {
 
 html {
   /* background-image: url("assets/bg-images/baseline.png"); */
-  background-image: url("assets/bg-images/bg-1a.png"), url("assets/bg-images/bg-2.png");
-  background-size: 120vh, 100vw;
+  background-image: url("assets/bg-images/bgm.png"), url("assets/bg-images/bgm-a.png");
+  background-size: 100vw;
   background-position: top;
   background-repeat: no-repeat, repeat;
   color: white;
@@ -234,7 +234,11 @@ section {
   transition: all 0.2s ease-in;
 }
 
-@media (min-width: 400px) {
+@media (min-width: 500px) {
+  html {
+    background-image: url("assets/bg-images/bg.png"), url("assets/bg-images/bg-a.png");
+  }
+
   .js #menu-button {
     display: none;
   }
