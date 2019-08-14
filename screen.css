@@ -17,6 +17,12 @@ a:hover {
   color: #b31cff;
 }
 
+body {
+  margin: auto;
+  margin-top: 20vw;
+  width: 80%;
+}
+
 figcaption {
   margin: 0.61111em 0 0.61111em 0;
   text-align: center;
@@ -49,6 +55,10 @@ footer {
   font-family: Untitled;
   src: url("assets/fonts/unititled.otf") format("opentype");
   font-style: normal;
+}
+
+#header {
+  margin: auto;
 }
 
 html {
@@ -110,10 +120,6 @@ article {
 
 .description {
   padding: 0.61111em 0 0 3vw;
-}
-
-#header {
-  margin-bottom: 2em;
 }
 
 #portfolio-content {
